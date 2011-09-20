@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'VenmoHTTP' target in the 'VenmoHTTP' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
