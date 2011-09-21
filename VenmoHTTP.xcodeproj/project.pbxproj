@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9CBCED36142940A70037DFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED35142940A70037DFF4 /* Foundation.framework */; };
-		9CBCED3C142940A70037DFF4 /* VenmoHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCED3B142940A70037DFF4 /* VenmoHTTP.m */; };
 		9CBCED44142940A70037DFF4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED43142940A70037DFF4 /* SenTestingKit.framework */; };
 		9CBCED46142940A70037DFF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED45142940A70037DFF4 /* UIKit.framework */; };
 		9CBCED47142940A70037DFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED35142940A70037DFF4 /* Foundation.framework */; };
 		9CBCED4A142940A70037DFF4 /* libVenmoHTTP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED32142940A70037DFF4 /* libVenmoHTTP.a */; };
 		9CBCED50142940A70037DFF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CBCED4E142940A70037DFF4 /* InfoPlist.strings */; };
 		9CBCED53142940A70037DFF4 /* VenmoHTTPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCED52142940A70037DFF4 /* VenmoHTTPTests.m */; };
+		9CBCED5E142948210037DFF4 /* VenmoHTTPJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBCED5C142948210037DFF4 /* VenmoHTTPJSON.h */; };
+		9CBCED5F142948210037DFF4 /* VenmoHTTPJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCED5D142948210037DFF4 /* VenmoHTTPJSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,6 @@
 		9CBCED35142940A70037DFF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CBCED39142940A70037DFF4 /* VenmoHTTP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenmoHTTP-Prefix.pch"; sourceTree = "<group>"; };
 		9CBCED3A142940A70037DFF4 /* VenmoHTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VenmoHTTP.h; sourceTree = "<group>"; };
-		9CBCED3B142940A70037DFF4 /* VenmoHTTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTP.m; sourceTree = "<group>"; };
 		9CBCED42142940A70037DFF4 /* VenmoHTTPTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenmoHTTPTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBCED43142940A70037DFF4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9CBCED45142940A70037DFF4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -40,6 +40,8 @@
 		9CBCED4F142940A70037DFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CBCED51142940A70037DFF4 /* VenmoHTTPTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VenmoHTTPTests.h; sourceTree = "<group>"; };
 		9CBCED52142940A70037DFF4 /* VenmoHTTPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPTests.m; sourceTree = "<group>"; };
+		9CBCED5C142948210037DFF4 /* VenmoHTTPJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenmoHTTPJSON.h; sourceTree = "<group>"; };
+		9CBCED5D142948210037DFF4 /* VenmoHTTPJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPJSON.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				9CBCED3A142940A70037DFF4 /* VenmoHTTP.h */,
-				9CBCED3B142940A70037DFF4 /* VenmoHTTP.m */,
+				9CBCED5C142948210037DFF4 /* VenmoHTTPJSON.h */,
+				9CBCED5D142948210037DFF4 /* VenmoHTTPJSON.m */,
 				9CBCED38142940A70037DFF4 /* Supporting Files */,
 			);
 			path = VenmoHTTP;
@@ -138,6 +141,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CBCED5E142948210037DFF4 /* VenmoHTTPJSON.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBCED3C142940A70037DFF4 /* VenmoHTTP.m in Sources */,
+				9CBCED5F142948210037DFF4 /* VenmoHTTPJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
