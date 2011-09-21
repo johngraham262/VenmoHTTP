@@ -11,10 +11,11 @@
 		9CBCED44142940A70037DFF4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED43142940A70037DFF4 /* SenTestingKit.framework */; };
 		9CBCED47142940A70037DFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED35142940A70037DFF4 /* Foundation.framework */; };
 		9CBCED4A142940A70037DFF4 /* libVenmoHTTP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED32142940A70037DFF4 /* libVenmoHTTP.a */; };
-		9CBCED53142940A70037DFF4 /* VenmoHTTPSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCED52142940A70037DFF4 /* VenmoHTTPSpecs.m */; };
+		9CBCED53142940A70037DFF4 /* VenmoHTTPJSONSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCED52142940A70037DFF4 /* VenmoHTTPJSONSpecs.m */; };
 		9CBCED5E142948210037DFF4 /* VenmoHTTPJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBCED5C142948210037DFF4 /* VenmoHTTPJSON.h */; };
 		9CBCED5F142948210037DFF4 /* VenmoHTTPJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCED5D142948210037DFF4 /* VenmoHTTPJSON.m */; };
 		C9015454142976A1004E1D0F /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C901544F1429756E004E1D0F /* libOCMock.a */; };
+		C90CAE66142A2F5900AFBC03 /* NSInvocation+SpecMethodPrefix.m in Sources */ = {isa = PBXBuildFile; fileRef = C90CAE65142A2F5900AFBC03 /* NSInvocation+SpecMethodPrefix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,11 +64,12 @@
 		9CBCED42142940A70037DFF4 /* VenmoHTTPSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenmoHTTPSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBCED43142940A70037DFF4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9CBCED4D142940A70037DFF4 /* VenmoHTTPSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenmoHTTPSpecs-Info.plist"; sourceTree = "<group>"; };
-		9CBCED52142940A70037DFF4 /* VenmoHTTPSpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPSpecs.m; sourceTree = "<group>"; };
+		9CBCED52142940A70037DFF4 /* VenmoHTTPJSONSpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPJSONSpecs.m; sourceTree = "<group>"; };
 		9CBCED5C142948210037DFF4 /* VenmoHTTPJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenmoHTTPJSON.h; sourceTree = "<group>"; };
 		9CBCED5D142948210037DFF4 /* VenmoHTTPJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPJSON.m; sourceTree = "<group>"; };
 		C90154431429756D004E1D0F /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = OCMock/OCMock.xcodeproj; sourceTree = "<group>"; };
 		C90CAE361429790100AFBC03 /* VenmoHTTPSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenmoHTTPSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		C90CAE65142A2F5900AFBC03 /* NSInvocation+SpecMethodPrefix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+SpecMethodPrefix.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +146,7 @@
 		9CBCED4B142940A70037DFF4 /* VenmoHTTPSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				9CBCED52142940A70037DFF4 /* VenmoHTTPSpecs.m */,
+				9CBCED52142940A70037DFF4 /* VenmoHTTPJSONSpecs.m */,
 				9CBCED4C142940A70037DFF4 /* Supporting Files */,
 			);
 			path = VenmoHTTPSpecs;
@@ -155,6 +157,7 @@
 			children = (
 				9CBCED4D142940A70037DFF4 /* VenmoHTTPSpecs-Info.plist */,
 				C90CAE361429790100AFBC03 /* VenmoHTTPSpecs-Prefix.pch */,
+				C90CAE65142A2F5900AFBC03 /* NSInvocation+SpecMethodPrefix.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -323,7 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBCED53142940A70037DFF4 /* VenmoHTTPSpecs.m in Sources */,
+				9CBCED53142940A70037DFF4 /* VenmoHTTPJSONSpecs.m in Sources */,
+				C90CAE66142A2F5900AFBC03 /* NSInvocation+SpecMethodPrefix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

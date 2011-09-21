@@ -1,12 +1,12 @@
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface VenmoHTTPSpecs : SenTestCase
+@interface VenmoHTTPJSONSpecs : SenTestCase
 
 @end
 
-@implementation VenmoHTTPSpecs
+@implementation VenmoHTTPJSONSpecs
 
-- (void)testExample {
+- (void)specExample {
     STFail(@"Unit tests are not implemented yet in VenmoHTTPSpecs");
 }
 
