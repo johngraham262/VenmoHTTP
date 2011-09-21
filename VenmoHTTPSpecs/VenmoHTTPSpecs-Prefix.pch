@@ -2,10 +2,7 @@
 
 #ifdef __OBJC__
 
-// Frameworks
-#import <SenTestingKit/SenTestingKit.h>
-
-// Libraries
+#import "VenmoSpecs.h"
 #import <OCMock/OCMock.h>
 
 #endif

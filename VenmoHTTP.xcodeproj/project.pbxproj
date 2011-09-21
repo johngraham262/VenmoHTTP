@@ -70,6 +70,7 @@
 		C90154431429756D004E1D0F /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = OCMock/OCMock.xcodeproj; sourceTree = "<group>"; };
 		C90CAE361429790100AFBC03 /* VenmoHTTPSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenmoHTTPSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		C90CAE65142A2F5900AFBC03 /* NSInvocation+SpecMethodPrefix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+SpecMethodPrefix.m"; sourceTree = "<group>"; };
+		C90CAE67142A31E500AFBC03 /* VenmoSpecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenmoSpecs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +159,7 @@
 				9CBCED4D142940A70037DFF4 /* VenmoHTTPSpecs-Info.plist */,
 				C90CAE361429790100AFBC03 /* VenmoHTTPSpecs-Prefix.pch */,
 				C90CAE65142A2F5900AFBC03 /* NSInvocation+SpecMethodPrefix.m */,
+				C90CAE67142A31E500AFBC03 /* VenmoSpecs.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
