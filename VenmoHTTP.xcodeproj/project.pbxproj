@@ -63,7 +63,6 @@
 		9CBCED42142940A70037DFF4 /* VenmoHTTPTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenmoHTTPTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBCED43142940A70037DFF4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9CBCED4D142940A70037DFF4 /* VenmoHTTPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenmoHTTPTests-Info.plist"; sourceTree = "<group>"; };
-		9CBCED51142940A70037DFF4 /* VenmoHTTPTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VenmoHTTPTests.h; sourceTree = "<group>"; };
 		9CBCED52142940A70037DFF4 /* VenmoHTTPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPTests.m; sourceTree = "<group>"; };
 		9CBCED5C142948210037DFF4 /* VenmoHTTPJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenmoHTTPJSON.h; sourceTree = "<group>"; };
 		9CBCED5D142948210037DFF4 /* VenmoHTTPJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPJSON.m; sourceTree = "<group>"; };
@@ -145,7 +144,6 @@
 		9CBCED4B142940A70037DFF4 /* VenmoHTTPTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CBCED51142940A70037DFF4 /* VenmoHTTPTests.h */,
 				9CBCED52142940A70037DFF4 /* VenmoHTTPTests.m */,
 				9CBCED4C142940A70037DFF4 /* Supporting Files */,
 			);
