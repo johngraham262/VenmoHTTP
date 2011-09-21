@@ -26,6 +26,27 @@
 			remoteGlobalIDString = 9CBCED31142940A70037DFF4;
 			remoteInfo = VenmoHTTP;
 		};
+		C901544C1429756E004E1D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90154431429756D004E1D0F /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C907176F1421BED300C20915;
+			remoteInfo = OCMock;
+		};
+		C901544E1429756E004E1D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90154431429756D004E1D0F /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C907171F1421A05A00C20915;
+			remoteInfo = OCMockIOS;
+		};
+		C90154501429756E004E1D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90154431429756D004E1D0F /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03BF2D3708F1C69500978C59;
+			remoteInfo = OCMockTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +63,7 @@
 		9CBCED52142940A70037DFF4 /* VenmoHTTPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPTests.m; sourceTree = "<group>"; };
 		9CBCED5C142948210037DFF4 /* VenmoHTTPJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenmoHTTPJSON.h; sourceTree = "<group>"; };
 		9CBCED5D142948210037DFF4 /* VenmoHTTPJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPJSON.m; sourceTree = "<group>"; };
+		C90154431429756D004E1D0F /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = OCMock/OCMock.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +94,7 @@
 			children = (
 				9CBCED37142940A70037DFF4 /* VenmoHTTP */,
 				9CBCED4B142940A70037DFF4 /* VenmoHTTPTests */,
+				C901544014297468004E1D0F /* Libraries */,
 				9CBCED34142940A70037DFF4 /* Frameworks */,
 				9CBCED33142940A70037DFF4 /* Products */,
 			);
@@ -132,6 +155,24 @@
 				9CBCED4E142940A70037DFF4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C901544014297468004E1D0F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C90154431429756D004E1D0F /* OCMock.xcodeproj */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		C90154441429756D004E1D0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C901544D1429756E004E1D0F /* OCMock.framework */,
+				C901544F1429756E004E1D0F /* libOCMock.a */,
+				C90154511429756E004E1D0F /* OCMockTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +243,12 @@
 			mainGroup = 9CBCED27142940A70037DFF4;
 			productRefGroup = 9CBCED33142940A70037DFF4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C90154441429756D004E1D0F /* Products */;
+					ProjectRef = C90154431429756D004E1D0F /* OCMock.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9CBCED31142940A70037DFF4 /* VenmoHTTP */,
@@ -209,6 +256,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C901544D1429756E004E1D0F /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = C901544C1429756E004E1D0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C901544F1429756E004E1D0F /* libOCMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOCMock.a;
+			remoteRef = C901544E1429756E004E1D0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C90154511429756E004E1D0F /* OCMockTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockTests.octest;
+			remoteRef = C90154501429756E004E1D0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9CBCED3F142940A70037DFF4 /* Resources */ = {
@@ -392,6 +463,7 @@
 				9CBCED58142940A70037DFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CBCED59142940A70037DFF4 /* Build configuration list for PBXNativeTarget "VenmoHTTPTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +472,7 @@
 				9CBCED5B142940A70037DFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
