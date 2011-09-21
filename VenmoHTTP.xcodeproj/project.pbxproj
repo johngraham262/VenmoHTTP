@@ -11,7 +11,6 @@
 		9CBCED44142940A70037DFF4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED43142940A70037DFF4 /* SenTestingKit.framework */; };
 		9CBCED47142940A70037DFF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED35142940A70037DFF4 /* Foundation.framework */; };
 		9CBCED4A142940A70037DFF4 /* libVenmoHTTP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCED32142940A70037DFF4 /* libVenmoHTTP.a */; };
-		9CBCED50142940A70037DFF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CBCED4E142940A70037DFF4 /* InfoPlist.strings */; };
 		9CBCED53142940A70037DFF4 /* VenmoHTTPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCED52142940A70037DFF4 /* VenmoHTTPTests.m */; };
 		9CBCED5E142948210037DFF4 /* VenmoHTTPJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBCED5C142948210037DFF4 /* VenmoHTTPJSON.h */; };
 		9CBCED5F142948210037DFF4 /* VenmoHTTPJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCED5D142948210037DFF4 /* VenmoHTTPJSON.m */; };
@@ -64,12 +63,12 @@
 		9CBCED42142940A70037DFF4 /* VenmoHTTPTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenmoHTTPTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBCED43142940A70037DFF4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9CBCED4D142940A70037DFF4 /* VenmoHTTPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenmoHTTPTests-Info.plist"; sourceTree = "<group>"; };
-		9CBCED4F142940A70037DFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CBCED51142940A70037DFF4 /* VenmoHTTPTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VenmoHTTPTests.h; sourceTree = "<group>"; };
 		9CBCED52142940A70037DFF4 /* VenmoHTTPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPTests.m; sourceTree = "<group>"; };
 		9CBCED5C142948210037DFF4 /* VenmoHTTPJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenmoHTTPJSON.h; sourceTree = "<group>"; };
 		9CBCED5D142948210037DFF4 /* VenmoHTTPJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenmoHTTPJSON.m; sourceTree = "<group>"; };
 		C90154431429756D004E1D0F /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = OCMock/OCMock.xcodeproj; sourceTree = "<group>"; };
+		C90CAE361429790100AFBC03 /* VenmoHTTPTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenmoHTTPTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				9CBCED4D142940A70037DFF4 /* VenmoHTTPTests-Info.plist */,
-				9CBCED4E142940A70037DFF4 /* InfoPlist.strings */,
+				C90CAE361429790100AFBC03 /* VenmoHTTPTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -292,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBCED50142940A70037DFF4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,17 +343,6 @@
 			targetProxy = C9015452142975DC004E1D0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9CBCED4E142940A70037DFF4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CBCED4F142940A70037DFF4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9CBCED54142940A70037DFF4 /* Debug */ = {
@@ -433,7 +420,7 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VenmoHTTP/VenmoHTTP-Prefix.pch";
+				GCC_PREFIX_HEADER = "VenmoHTTPTests/VenmoHTTPTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = Libraries/OCMock;
 				INFOPLIST_FILE = "VenmoHTTPTests/VenmoHTTPTests-Info.plist";
 				OTHER_LDFLAGS = (
@@ -454,7 +441,7 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VenmoHTTP/VenmoHTTP-Prefix.pch";
+				GCC_PREFIX_HEADER = "VenmoHTTPTests/VenmoHTTPTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = Libraries/OCMock;
 				INFOPLIST_FILE = "VenmoHTTPTests/VenmoHTTPTests-Info.plist";
 				OTHER_LDFLAGS = (
